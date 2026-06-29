@@ -1,0 +1,2739 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mansi Sharma — Career Strategist & Mindset Mentor</title>
+    <meta
+      name="description"
+      content="Career guidance for schools and executive presence coaching for professionals. Structured. Outcome-driven."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/img/white-logo-removebg-preview (2).png">
+    <style>
+      :root {
+        --ink: #111111;
+        --ink-2: #444444;
+        --ink-3: #777777;
+        --border: #e2e2e2;
+        --bg: #ffffff;
+        --bg-warm: #f9f8f6;
+        --bg-dark: #141414;
+        --bg-dark2: #1e1e1e;
+        --gold: #b8860b;
+        --gold-lt: #f5edda;
+        --serif: "DM Serif Display", Georgia, serif;
+        --sans: "DM Sans", system-ui, sans-serif;
+        --r: 4px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+
+      body {
+        font-family: var(--sans);
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* ─── NAV ─── */
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 200;
+        height: 64px;
+        background: rgba(255, 255, 255, 0.97);
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        padding: 0 6%;
+        justify-content: space-between;
+        backdrop-filter: blur(8px);
+      }
+
+      .nav-logo {
+        font-family: var(--serif);
+        font-size: 20px;
+        color: var(--ink);
+      }
+
+      .nav-logo b {
+        color: var(--gold);
+        font-weight: 400;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 28px;
+        align-items: center;
+      }
+
+      .nav-links a {
+        font-size: 15px;
+        color: var(--ink-2);
+        font-weight: 400;
+        transition: color 0.15s;
+      }
+
+      .nav-links a:hover {
+        color: var(--ink);
+      }
+
+      .nav-book {
+        background: rgb(224, 224, 224);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 9px 22px;
+        border-radius: var(--r);
+        font-family: var(--sans);
+        transition: background 0.15s;
+      }
+
+      .nav-book:hover {
+        background: var(--gold);
+        color: #fff;
+      }
+
+      .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 4px;
+      }
+
+      .hamburger span {
+        display: block;
+        width: 22px;
+        height: 1.5px;
+        background: var(--ink);
+        margin: 5px 0;
+      }
+
+      .m-menu {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 300;
+        background: #fff;
+        flex-direction: column;
+        padding: 20px 6%;
+      }
+
+      .m-menu.open {
+        display: flex;
+      }
+
+      .m-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+      }
+
+      .m-close {
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: var(--ink);
+      }
+
+      .m-links {
+        list-style: none;
+      }
+
+      .m-links li {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .m-links li a {
+        display: block;
+        padding: 18px 0;
+        font-size: 22px;
+        font-family: var(--serif);
+        color: var(--ink);
+      }
+
+      .m-cta {
+        margin-top: 28px;
+      }
+
+      .m-cta a {
+        display: block;
+        text-align: center;
+        background: var(--ink);
+        color: #fff;
+        padding: 16px;
+        border-radius: var(--r);
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      /* ─── HERO ─── */
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 440px;
+        gap: 0;
+        min-height: calc(100vh - 64px);
+        align-items: stretch;
+      }
+
+      .hero-left {
+        padding: 72px 6% 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-right: 1px solid var(--border);
+      }
+
+      .hero-tag {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--gold);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 28px;
+      }
+
+      .hero-tag::before {
+        content: "";
+        display: block;
+        width: 28px;
+        height: 1px;
+        background: var(--gold);
+      }
+
+      .hero-h1 {
+        font-family: var(--serif);
+        font-size: clamp(40px, 4.5vw, 60px);
+        line-height: 1.1;
+        color: var(--ink);
+        margin-bottom: 24px;
+        letter-spacing: -0.01em;
+      }
+
+      .hero-h1 i {
+        font-style: italic;
+        color: var(--gold);
+      }
+
+      .hero-desc {
+        font-size: 17px;
+        color: var(--ink-2);
+        line-height: 1.75;
+        max-width: 480px;
+        margin-bottom: 36px;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 56px;
+      }
+
+      .btn-primary {
+        background: var(--ink);
+        color: #fff;
+        padding: 13px 28px;
+        border-radius: var(--r);
+        font-size: 15px;
+        font-weight: 500;
+        font-family: var(--sans);
+        border: 1.5px solid var(--ink);
+        transition: all 0.15s;
+        cursor: pointer;
+        display: inline-block;
+      }
+
+      .btn-primary:hover {
+        background: var(--gold);
+        border-color: var(--gold);
+      }
+
+      .btn-ghost {
+        background: transparent;
+        color: var(--ink);
+        padding: 13px 28px;
+        border-radius: var(--r);
+        font-size: 15px;
+        font-weight: 500;
+        font-family: var(--sans);
+        border: 1.5px solid var(--border);
+        transition: all 0.15s;
+        cursor: pointer;
+        display: inline-block;
+      }
+
+      .btn-ghost:hover {
+        border-color: var(--ink);
+      }
+
+      .hero-trust {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 36px;
+      }
+
+      .trust-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 11px 14px;
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        background: var(--bg-warm);
+      }
+
+      .trust-icon {
+        font-size: 16px;
+        flex-shrink: 0;
+      }
+
+      .trust-txt {
+        font-size: 13px;
+        color: var(--ink-2);
+        font-weight: 500;
+        line-height: 1.3;
+      }
+
+      .hero-stats {
+        display: flex;
+        gap: 40px;
+        padding-top: 36px;
+        border-top: 1px solid var(--border);
+      }
+
+      .h-stat-num {
+        font-family: var(--serif);
+        font-size: 34px;
+        color: var(--ink);
+      }
+
+      .h-stat-num sup {
+        font-size: 18px;
+        color: var(--gold);
+      }
+
+      .h-stat-lbl {
+        font-size: 13px;
+        color: var(--ink-3);
+        margin-top: 3px;
+      }
+
+      .hero-right {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .hero-photo-slot {
+        flex: 1;
+        background: var(--bg-warm);
+        position: relative;
+        min-height: 340px;
+        overflow: hidden;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .img-placeholder {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .img-placeholder-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: 1.5px dashed #c8c4bd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .img-placeholder-icon svg {
+        width: 22px;
+        height: 22px;
+        stroke: #c8c4bd;
+        fill: none;
+      }
+
+      .img-placeholder p {
+        font-size: 13px;
+        color: #c0bab2;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      .img-placeholder small {
+        font-size: 12px;
+        color: #d4cfc7;
+      }
+
+      .hero-journey-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .j-card {
+        padding: 26px 22px;
+        border-right: 1px solid var(--border);
+        border-top: 1px solid var(--border);
+        transition: background 0.15s;
+        cursor: pointer;
+      }
+
+      .j-card:last-child {
+        border-right: none;
+      }
+
+      .j-card:hover {
+        background: var(--bg-warm);
+      }
+
+      .j-card-icon {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .j-card-title {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 6px;
+      }
+
+      .j-card-desc {
+        font-size: 13px;
+        color: var(--ink-3);
+        line-height: 1.6;
+      }
+
+      .j-card-link {
+        font-size: 13px;
+        color: var(--gold);
+        margin-top: 10px;
+        font-weight: 500;
+        display: block;
+      }
+
+      /* ─── SECTION COMMON ─── */
+      .section {
+        padding: 84px 6%;
+      }
+
+      .section-alt {
+        background: var(--bg-warm);
+      }
+
+      .section-dark {
+        background: var(--bg-dark);
+      }
+
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--gold);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+
+      .eyebrow::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 1px;
+        background: var(--gold);
+      }
+
+      .eyebrow-dark {
+        color: #9a7b3c;
+      }
+
+      .eyebrow-dark::before {
+        background: #9a7b3c;
+      }
+
+      h2.sh {
+        font-family: var(--serif);
+        font-size: clamp(28px, 3vw, 42px);
+        color: var(--ink);
+        line-height: 1.2;
+        margin-bottom: 16px;
+      }
+
+      h2.sh-dark {
+        color: #fff;
+      }
+
+      p.sp {
+        font-size: 17px;
+        color: var(--ink-2);
+        line-height: 1.75;
+        max-width: 560px;
+        margin-bottom: 48px;
+      }
+
+      p.sp-dark {
+        color: rgba(255, 255, 255, 0.45);
+      }
+
+      /* ─── PILLARS ─── */
+      .pillars {
+        background: var(--bg-dark);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .pillar {
+        padding: 48px 40px;
+        border-right: 1px solid rgba(255, 255, 255, 0.07);
+      }
+
+      .pillar:last-child {
+        border-right: none;
+      }
+
+      .pillar-num {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.09em;
+        color: #666;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+
+      .pillar-title {
+        font-family: var(--serif);
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 12px;
+      }
+
+      .pillar-desc {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.42);
+        line-height: 1.7;
+      }
+
+      /* ─── ABOUT ─── */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        align-items: center;
+      }
+
+      .about-img-slot {
+        aspect-ratio: 4/5;
+        background: var(--bg-warm);
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .about-img-slot img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .about-text p {
+        font-size: 16px;
+        color: var(--ink-2);
+        line-height: 1.8;
+        margin-bottom: 18px;
+      }
+
+      .about-text p:last-of-type {
+        margin-bottom: 32px;
+      }
+
+      .credentials {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 32px;
+      }
+
+      .cred-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 15px;
+        color: var(--ink-2);
+      }
+
+      .cred-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--gold);
+        flex-shrink: 0;
+      }
+
+      /* ─── SERVICES ─── */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background: var(--border);
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        overflow: hidden;
+      }
+
+      .svc {
+        background: var(--bg);
+        padding: 36px 30px;
+        transition: background 0.15s;
+      }
+
+      .svc:hover {
+        background: var(--bg-warm);
+      }
+
+      .svc-track {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 16px;
+      }
+
+      .svc-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: var(--r);
+        border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-bottom: 16px;
+        background: var(--bg);
+      }
+
+      .svc-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 12px;
+      }
+
+      .svc-desc {
+        font-size: 15px;
+        color: var(--ink-2);
+        line-height: 1.72;
+        margin-bottom: 22px;
+      }
+
+      .svc-list {
+        list-style: none;
+      }
+
+      .svc-list li {
+        font-size: 14px;
+        color: var(--ink-2);
+        padding: 7px 0;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .svc-list li:last-child {
+        border-bottom: none;
+      }
+
+      .svc-list li::before {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--gold);
+        flex-shrink: 0;
+      }
+
+      /* ─── SCHOOLS ─── */
+      .school-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        align-items: start;
+      }
+
+      .why-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 8px;
+      }
+
+      .why-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 13px 14px;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+      }
+
+      .why-tick {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: var(--ink);
+        color: #fff;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
+
+      .why-txt {
+        font-size: 14px;
+        color: var(--ink);
+        font-weight: 500;
+        line-height: 1.45;
+      }
+
+      .school-img-slot {
+        width: 100%;
+        aspect-ratio: 16/10;
+        background: var(--bg-warm);
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 18px;
+      }
+
+      .benefit-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .benefit-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 16px 18px;
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        background: var(--bg);
+      }
+
+      .benefit-icon-box {
+        width: 38px;
+        height: 38px;
+        flex-shrink: 0;
+        border-radius: var(--r);
+        background: var(--gold-lt);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+      }
+
+      .benefit-title {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 4px;
+      }
+
+      .benefit-sub {
+        font-size: 14px;
+        color: var(--ink-3);
+        line-height: 1.55;
+      }
+
+      /* ─── SESSION ─── */
+      .session-section {
+        background: var(--bg-dark);
+        padding: 84px 6%;
+      }
+
+      .session-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 0;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: var(--r);
+        overflow: hidden;
+      }
+
+      .session-step {
+        padding: 30px 20px;
+        border-right: 1px solid rgba(255, 255, 255, 0.08);
+        transition: background 0.15s;
+        text-align: center;
+      }
+
+      .session-step:last-child {
+        border-right: none;
+      }
+
+      .session-step:hover {
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .ss-num {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        color: var(--gold);
+        margin-bottom: 12px;
+      }
+
+      .ss-time {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--serif);
+        font-size: 18px;
+        color: #fff;
+        margin: 0 auto 14px;
+      }
+
+      .ss-label {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.78);
+        margin-bottom: 6px;
+      }
+
+      .ss-sub {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.32);
+        line-height: 1.55;
+      }
+
+      /* ─── GALLERY ─── */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 220px 220px;
+        gap: 12px;
+      }
+
+      .gallery-slot {
+        background: var(--bg-warm);
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .gallery-slot.tall {
+        grid-row: span 2;
+      }
+
+      .gallery-slot img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .gallery-slot-inner {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .gallery-slot-inner svg {
+        width: 28px;
+        height: 28px;
+        stroke: #c0bab2;
+        fill: none;
+      }
+
+      .gallery-slot-inner span {
+        font-size: 12px;
+        color: #c0bab2;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        text-align: center;
+      }
+
+      /* ─── TESTIMONIALS ─── */
+      .t-tabs {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+      }
+
+      .t-tab {
+        padding: 8px 20px;
+        border-radius: 100px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid var(--border);
+        background: var(--bg);
+        color: var(--ink-2);
+        transition: all 0.15s;
+        font-family: var(--sans);
+      }
+
+      .t-tab:hover {
+        border-color: var(--ink);
+        color: var(--ink);
+      }
+
+      .t-tab.on {
+        background: var(--ink);
+        border-color: var(--ink);
+        color: #fff;
+      }
+
+      .t-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .t-video-card {
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        overflow: hidden;
+        background: var(--bg);
+      }
+
+      .t-video-slot {
+        aspect-ratio: 16/9;
+        background: #f0ede8;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .t-video-slot img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .play-btn {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .play-btn svg {
+        width: 20px;
+        height: 20px;
+        fill: var(--ink);
+        margin-left: 2px;
+      }
+
+      .t-video-body {
+        padding: 20px 20px 22px;
+      }
+
+      .t-video-name {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 3px;
+      }
+
+      .t-video-role {
+        font-size: 13px;
+        color: var(--ink-3);
+        margin-bottom: 12px;
+      }
+
+      .t-video-quote {
+        font-size: 14px;
+        color: var(--ink-2);
+        line-height: 1.68;
+        font-style: italic;
+      }
+
+      .t-video-tag {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        padding: 3px 10px;
+        border-radius: 100px;
+        background: var(--gold-lt);
+        color: var(--gold);
+        margin-bottom: 10px;
+      }
+
+      .t-text-card {
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        padding: 26px 24px;
+        background: var(--bg);
+        transition: border-color 0.15s;
+      }
+
+      .t-text-card:hover {
+        border-color: #c8c4bd;
+      }
+
+      .t-quote {
+        font-family: var(--serif);
+        font-size: 40px;
+        color: var(--gold-lt);
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+
+      .t-body {
+        font-size: 15px;
+        color: var(--ink-2);
+        line-height: 1.72;
+        margin-bottom: 22px;
+        font-style: italic;
+      }
+
+      .t-person {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border-top: 1px solid var(--border);
+        padding-top: 16px;
+      }
+
+      .t-avatar {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: var(--gold-lt);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--gold);
+        flex-shrink: 0;
+        overflow: hidden;
+      }
+
+      .t-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .t-name {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      .t-role {
+        font-size: 12px;
+        color: var(--ink-3);
+        margin-top: 2px;
+      }
+
+      .t-stars {
+        margin-left: auto;
+        font-size: 13px;
+        color: var(--gold);
+      }
+
+      /* ─── FAQ ─── */
+      .faq-wrap {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .faq-q {
+        width: 100%;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 22px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        font-family: var(--sans);
+        text-align: left;
+      }
+
+      .faq-q-text {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--ink);
+        line-height: 1.4;
+      }
+
+      .faq-ico {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--bg-warm);
+        border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: var(--ink-2);
+        flex-shrink: 0;
+        transition: all 0.2s;
+        line-height: 1;
+      }
+
+      .faq-item.open .faq-ico {
+        background: var(--ink);
+        color: #fff;
+        transform: rotate(45deg);
+      }
+
+      .faq-ans {
+        font-size: 15px;
+        color: var(--ink-2);
+        line-height: 1.78;
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.3s ease,
+          padding 0.25s;
+      }
+
+      .faq-item.open .faq-ans {
+        max-height: 260px;
+        padding-bottom: 22px;
+      }
+
+      /* ─── CONTACT ─── */
+      .contact-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        background: var(--bg-dark);
+        min-height: 520px;
+      }
+
+      .contact-left {
+        padding: 80px 6%;
+        border-right: 1px solid rgba(255, 255, 255, 0.07);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .contact-left h2 {
+        font-family: var(--serif);
+        font-size: clamp(28px, 3vw, 40px);
+        color: #fff;
+        margin-bottom: 16px;
+      }
+
+      .contact-left p {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.42);
+        line-height: 1.78;
+        margin-bottom: 36px;
+        max-width: 380px;
+      }
+
+      .c-detail {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+
+      .c-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: var(--r);
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        flex-shrink: 0;
+      }
+
+      .c-text {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.52);
+      }
+
+      .contact-right {
+        padding: 80px 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .form-group {
+        margin-bottom: 16px;
+      }
+
+      .form-group label {
+        display: block;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.32);
+        margin-bottom: 7px;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: var(--r);
+        padding: 12px 14px;
+        font-size: 15px;
+        color: #fff;
+        font-family: var(--sans);
+        outline: none;
+        transition: border-color 0.15s;
+        resize: none;
+      }
+
+      .form-group input::placeholder,
+      .form-group textarea::placeholder {
+        color: rgba(255, 255, 255, 0.22);
+      }
+
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+        border-color: rgba(255, 255, 255, 0.28);
+      }
+
+      .form-group select option {
+        background: #1a1a1a;
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .form-submit {
+        width: 100%;
+        background: var(--gold);
+        color: #fff;
+        border: none;
+        padding: 14px;
+        border-radius: var(--r);
+        font-size: 15px;
+        font-weight: 600;
+        font-family: var(--sans);
+        cursor: pointer;
+        transition: background 0.15s;
+        margin-top: 4px;
+      }
+
+      .form-submit:hover {
+        background: #9a6e09;
+      }
+
+      .disc-note {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.22);
+        line-height: 1.65;
+        margin-top: 14px;
+        padding: 14px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: var(--r);
+      }
+
+      .disc-note strong {
+        color: rgba(255, 255, 255, 0.32);
+        font-weight: 500;
+      }
+
+      /* ─── FOOTER ─── */
+      footer {
+        background: var(--bg-dark2);
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 32px 6%;
+      }
+
+      .footer-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .footer-logo {
+        font-family: var(--serif);
+        font-size: 19px;
+        color: #fff;
+      }
+
+      .footer-logo b {
+        color: var(--gold);
+        font-weight: 400;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 24px;
+      }
+
+      .footer-links a {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.38);
+        transition: color 0.15s;
+      }
+
+      .footer-links a:hover {
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      .footer-socials {
+        display: flex;
+        gap: 10px;
+      }
+
+      .f-social {
+        width: 34px;
+        height: 34px;
+        border-radius: var(--r);
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.42);
+        transition: all 0.15s;
+      }
+
+      .f-social:hover {
+        background: var(--gold);
+        border-color: var(--gold);
+        color: #fff;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        padding-top: 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      .footer-copy {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.22);
+      }
+
+      .footer-disc {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.18);
+        line-height: 1.68;
+        max-width: 640px;
+      }
+
+      /* ─── REVEAL ─── */
+      .rev {
+        opacity: 0;
+        transform: translateY(20px);
+        transition:
+          opacity 0.5s ease,
+          transform 0.5s ease;
+      }
+
+      .rev.in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ─── RESPONSIVE ─── */
+      @media (max-width: 1024px) {
+        .hero {
+          grid-template-columns: 1fr;
+          min-height: auto;
+        }
+
+        .hero-right {
+          border-top: 1px solid var(--border);
+        }
+
+        .hero-photo-slot {
+          min-height: 300px;
+        }
+
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .about-img-slot {
+          aspect-ratio: 16/7;
+        }
+
+        .school-grid {
+          grid-template-columns: 1fr;
+          gap: 48px;
+        }
+
+        .session-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .session-step {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .t-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .pillars {
+          grid-template-columns: 1fr;
+        }
+
+        .pillar {
+          border-right: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        }
+
+        .pillar:last-child {
+          border-bottom: none;
+        }
+
+        .contact-wrap {
+          grid-template-columns: 1fr;
+        }
+
+        .contact-left {
+          border-right: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+          padding-bottom: 48px;
+        }
+
+        .gallery-grid {
+          grid-template-rows: 180px 180px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .nav-links {
+          display: none;
+        }
+
+        .hamburger {
+          display: block;
+        }
+
+        .hero-left {
+          padding: 48px 6% 40px;
+        }
+
+        .hero-stats {
+          gap: 20px;
+        }
+
+        .hero-journey-cards {
+          grid-template-columns: 1fr;
+        }
+
+        .j-card:first-child {
+          border-bottom: 1px solid var(--border);
+        }
+
+        .j-card:last-child {
+          border-top: none;
+        }
+
+        .why-list {
+          grid-template-columns: 1fr;
+        }
+
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+
+        .session-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .t-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .gallery-grid {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 160px 160px 160px;
+        }
+
+        .gallery-slot.tall {
+          grid-row: span 1;
+        }
+
+        .footer-top {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .footer-bottom {
+          flex-direction: column;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          transition: none !important;
+          animation: none !important;
+        }
+      }
+      .hero-left-inner {
+        display: flex;
+        gap: 50px;
+      }
+
+      @media (max-width: 640px) {
+        .hero-left-inner {
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">
+        <img
+          src="/image/logo.jpeg"
+          alt="Mansi Sharma"
+          style="width: 60px; height: auto"
+        />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#schools">For schools</a></li>
+        <li><a href="#media">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="nav-book">Book a call</a></li>
+      </ul>
+      <button
+        class="hamburger"
+        aria-label="Open menu"
+        onclick="document.getElementById('mmenu').classList.add('open')"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="m-menu" id="mmenu">
+      <div class="m-top">
+        <div class="nav-logo">Mansi <b>Sharma</b></div>
+        <button
+          class="m-close"
+          onclick="document.getElementById('mmenu').classList.remove('open')"
+        >
+          &times;
+        </button>
+      </div>
+      <ul class="m-links">
+        <li>
+          <a
+            href="#about"
+            onclick="document.getElementById('mmenu').classList.remove('open')"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#services"
+            onclick="document.getElementById('mmenu').classList.remove('open')"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#schools"
+            onclick="document.getElementById('mmenu').classList.remove('open')"
+            >For schools</a
+          >
+        </li>
+        <li>
+          <a
+            href="#media"
+            onclick="document.getElementById('mmenu').classList.remove('open')"
+            >Gallery</a
+          >
+        </li>
+        <li>
+          <a
+            href="#testimonials"
+            onclick="document.getElementById('mmenu').classList.remove('open')"
+            >Reviews</a
+          >
+        </li>
+        <li>
+          <a
+            href="#faq"
+            onclick="document.getElementById('mmenu').classList.remove('open')"
+            >FAQ</a
+          >
+        </li>
+      </ul>
+      <div class="m-cta">
+        <a
+          href="#contact"
+          onclick="document.getElementById('mmenu').classList.remove('open')"
+          >Book a consultation</a
+        >
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-left-inner">
+          <div>
+            <div class="hero-tag rev">
+              Career Strategist &amp; Mindset Mentor
+            </div>
+            <h1 class="hero-h1 rev">
+              Presence built<br />with <i>discipline</i><br />and strategy.
+            </h1>
+            <p class="hero-desc rev">
+              Structured career guidance for schools and colleges. Executive
+              presence coaching for professionals and founders. One methodology
+              — measurable outcomes.
+            </p>
+            <div class="hero-actions rev">
+              <a href="#schools" class="btn-primary">For schools</a>
+              <a href="#services" class="btn-ghost">For professionals</a>
+            </div>
+          </div>
+
+          <!-- Trust badges -->
+          <div class="hero-trust rev">
+            <div class="trust-item">
+              <span class="trust-icon">🏫</span>
+              <span class="trust-txt">School programs for grades 9-12 </span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">💼</span>
+              <span class="trust-txt"> Executive presence coaching</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">🚀</span>
+              <span class="trust-txt"
+                >LinkedIn and personal branding strategy</span
+              >
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">⚖️</span>
+              <span class="trust-txt">History of law Founders’ experience</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stats rev">
+          <div>
+            <div class="h-stat-num">50<sup>+</sup></div>
+            <div class="h-stat-lbl">Schools reached</div>
+          </div>
+          <div>
+            <div class="h-stat-num">2,000<sup>+</sup></div>
+            <div class="h-stat-lbl">Students guided</div>
+          </div>
+          <div>
+            <div class="h-stat-num">6<sup>+</sup></div>
+            <div class="h-stat-lbl">Years of practice</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-photo-slot">
+          <img
+            src="/image/mansi-01.jpeg"
+            alt="Mansi Sharma"
+            style="width: 100%; height: 100%; object-fit: cover; display: none"
+            id="heroImg"
+          />
+          <div class="img-placeholder" id="heroImgph">
+            <div class="img-placeholder-icon">
+              <svg viewBox="0 0 24 24" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="m21 15-5-5L5 21" />
+              </svg>
+            </div>
+            <p>Add Mansi's professional portrait photo here</p>
+            <small>880 × 1100 px recommended</small>
+          </div>
+        </div>
+        <div class="hero-journey-cards">
+          <a href="#schools" class="j-card">
+            <div class="j-card-icon">🏫</div>
+            <div class="j-card-title">For schools</div>
+            <div class="j-card-desc">
+              Career programs, workshops &amp; parent sessions for class 9–12
+            </div>
+            <span class="j-card-link">Learn more →</span>
+          </a>
+          <a href="#services" class="j-card">
+            <div class="j-card-icon">💼</div>
+            <div class="j-card-title">For professionals</div>
+            <div class="j-card-desc">
+              Personal branding, executive presence &amp; founder coaching
+            </div>
+            <span class="j-card-link">Learn more →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLARS -->
+    <div class="pillars">
+      <div class="pillar rev">
+        <div class="pillar-num">01 — Legal</div>
+        <div class="pillar-title">Legal clarity</div>
+        <div class="pillar-desc">
+          Legal training sharpens how situations are read — structured argument,
+          precise framing, and confident decisions under pressure.
+        </div>
+      </div>
+      <div class="pillar rev">
+        <div class="pillar-num">02 — Founder</div>
+        <div class="pillar-title">Founder instinct</div>
+        <div class="pillar-desc">
+          Founding ventures taught that strategy without execution is theory.
+          Real-world experience removes guesswork from every recommendation.
+        </div>
+      </div>
+      <div class="pillar rev">
+        <div class="pillar-num">03 — Strategy</div>
+        <div class="pillar-title">Strategic positioning</div>
+        <div class="pillar-desc">
+          Content and brand practice shows that visibility without positioning
+          is noise. Credibility is built deliberately, not assumed.
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="about-grid">
+        <div class="about-img-slot">
+          <img
+            src="/img/mansi-4.jpeg"
+            alt="Mansi Sharma"
+            style="display: none"
+            id="aboutImg"
+          />
+          <div class="img-placeholder" id="aboutImgph">
+            <div class="img-placeholder-icon">
+              <svg viewBox="0 0 24 24" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="m21 15-5-5L5 21" />
+              </svg>
+            </div>
+            <p>Add Mansi's about / speaking photo here</p>
+            <small>800 × 1000 px, portrait</small>
+          </div>
+        </div>
+        <div class="about-text rev">
+          <div class="eyebrow">About Mansi</div>
+          <h2 class="sh">Career Strategist. Legal Advisor. Entrepreneur.</h2>
+          <p>
+            Mansi Sharma brings together three disciplines that rarely appear in
+            one practitioner — legal training, founder experience, and content
+            strategy. The result is a methodology grounded in structure,
+            real-world execution, and visible credibility.
+          </p>
+          <p>
+            She has delivered this framework inside school classrooms, founder
+            cohorts, and one-on-one advisory sessions — producing measurable
+            shifts in how clients communicate, position, and carry themselves
+            professionally.
+          </p>
+          <div class="credentials">
+            <div class="cred-item">
+              <span class="cred-dot"></span>Legal advisor with structured
+              analytical training
+            </div>
+            <div class="cred-item">
+              <span class="cred-dot"></span>Founder of multiple ventures —
+              strategy from lived experience
+            </div>
+            <div class="cred-item">
+              <span class="cred-dot"></span>Career strategist across schools,
+              colleges, and corporate settings
+            </div>
+            <div class="cred-item">
+              <span class="cred-dot"></span>Content and brand practitioner with
+              a digital-first approach
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary">Book a consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section-alt" id="services">
+      <div class="eyebrow rev">What we offer</div>
+      <h2 class="sh rev">Three tracks. One standard of excellence.</h2>
+      <p class="sp rev">
+        Every engagement is built for measurable transformation — whether you
+        are a student, a founder, or a school leader.
+      </p>
+      <div class="services-grid rev">
+        <div class="svc">
+          <div class="svc-track">Individual track</div>
+          <div class="svc-icon">🎯</div>
+          <div class="svc-title">Mentorship &amp; executive presence</div>
+          <div class="svc-desc">
+            One-on-one coaching that builds communication discipline, clarity
+            under pressure, and a commanding professional identity — for
+            founders, students, and career professionals.
+          </div>
+          <ul class="svc-list">
+            <li>Personal mindset mentorship</li>
+            <li>Executive presence coaching</li>
+            <li>Communication development</li>
+            <li>Confidence building sessions</li>
+            <li>Career and growth guidance</li>
+            <li>Founder and business mentorship</li>
+          </ul>
+        </div>
+        <div class="svc">
+          <div class="svc-track">School track</div>
+          <div class="svc-icon">🏫</div>
+          <div class="svc-title">School &amp; institution programs</div>
+          <div class="svc-desc">
+            Structured programs for schools and colleges covering career
+            counselling, entrepreneurship, communication, and leadership
+            readiness — designed for lasting change.
+          </div>
+          <ul class="svc-list">
+            <li>Career counselling program</li>
+            <li>Class 9–12 workshops</li>
+            <li>Parent engagement sessions</li>
+            <li>Teacher development</li>
+            <li>Entrepreneurship program</li>
+            <li>Career assessment and student success kit</li>
+          </ul>
+        </div>
+        <div class="svc">
+          <div class="svc-track">Strategic track</div>
+          <div class="svc-icon">🚀</div>
+          <div class="svc-title">Brand consulting &amp; content strategy</div>
+          <div class="svc-desc">
+            LinkedIn positioning, founder storytelling, and digital brand
+            architecture for professionals who need their online presence to
+            reflect the seriousness of their work.
+          </div>
+          <ul class="svc-list">
+            <li>Personal brand strategy</li>
+            <li>LinkedIn positioning</li>
+            <li>Founder storytelling</li>
+            <li>Content systems and calendar</li>
+            <li>Authority building framework</li>
+            <li>Strategic communication</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHOOLS -->
+    <section class="section" id="schools">
+      <div class="school-grid">
+        <div>
+          <div class="eyebrow rev">For principals &amp; schools</div>
+          <h2 class="sh rev">Why schools choose this program</h2>
+          <p
+            style="
+              font-size: 16px;
+              color: var(--ink-2);
+              line-height: 1.78;
+              margin-bottom: 28px;
+            "
+            class="rev"
+          >
+            Principals engage this program not for motivation talks, but for
+            practical frameworks that produce measurable change in how students
+            present, communicate, and plan their futures.
+          </p>
+          <div class="school-img-slot rev">
+            <img
+              src="image/workshop.jpg"
+              alt="School workshop session"
+              style="display: none"
+              id="workshopImg"
+            />
+            <div class="img-placeholder" id="workshopImgph">
+              <div class="img-placeholder-icon">
+                <svg viewBox="0 0 24 24" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="m21 15-5-5L5 21" />
+                </svg>
+              </div>
+              <p>Add a school workshop / session photo</p>
+              <small>900 × 560 px, landscape</small>
+            </div>
+          </div>
+          <div class="why-list rev">
+            <div class="why-item">
+              <div class="why-tick">✓</div>
+              <div class="why-txt">Practical, hands-on sessions</div>
+            </div>
+            <div class="why-item">
+              <div class="why-tick">✓</div>
+              <div class="why-txt">Interactive student activities</div>
+            </div>
+            <div class="why-item">
+              <div class="why-tick">✓</div>
+              <div class="why-txt">Clear career roadmaps</div>
+            </div>
+            <div class="why-item">
+              <div class="why-tick">✓</div>
+              <div class="why-txt">Strong parent engagement</div>
+            </div>
+            <div class="why-item">
+              <div class="why-tick">✓</div>
+              <div class="why-txt">Personalized student reports</div>
+            </div>
+            <div class="why-item">
+              <div class="why-tick">✓</div>
+              <div class="why-txt">1-year student support</div>
+            </div>
+            <div class="why-item">
+              <div class="why-tick">✓</div>
+              <div class="why-txt">Annual workshop programs</div>
+            </div>
+            <div class="why-item">
+              <div class="why-tick">✓</div>
+              <div class="why-txt">Certification for students</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="eyebrow rev">Benefits for your school</div>
+          <h2 class="sh rev" style="font-size: clamp(24px, 2.5vw, 34px)">
+            What the school itself gains
+          </h2>
+          <div class="benefit-list rev">
+            <div class="benefit-row">
+              <div class="benefit-icon-box">📈</div>
+              <div>
+                <div class="benefit-title">
+                  Better career awareness among students
+                </div>
+                <div class="benefit-sub">
+                  Students discover their options early, reducing confusion at
+                  class 12 when decisions are hardest.
+                </div>
+              </div>
+            </div>
+            <div class="benefit-row">
+              <div class="benefit-icon-box">💡</div>
+              <div>
+                <div class="benefit-title">
+                  Improved student confidence and clarity
+                </div>
+                <div class="benefit-sub">
+                  Students who know their direction perform better in classrooms
+                  and board examinations.
+                </div>
+              </div>
+            </div>
+            <div class="benefit-row">
+              <div class="benefit-icon-box">👨‍👩‍👧</div>
+              <div>
+                <div class="benefit-title">Parent satisfaction and trust</div>
+                <div class="benefit-sub">
+                  Parents see structured, accountable guidance — not just
+                  motivational talks they cannot measure.
+                </div>
+              </div>
+            </div>
+            <div class="benefit-row">
+              <div class="benefit-icon-box">🏆</div>
+              <div>
+                <div class="benefit-title">School branding and reputation</div>
+                <div class="benefit-sub">
+                  Career support is now a metric parents actively use when
+                  choosing a school for their child.
+                </div>
+              </div>
+            </div>
+            <div class="benefit-row">
+              <div class="benefit-icon-box">📋</div>
+              <div>
+                <div class="benefit-title">
+                  Structured, systematic career guidance
+                </div>
+                <div class="benefit-sub">
+                  Not ad-hoc or one-off — a repeatable program built into the
+                  school's annual academic calendar.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 28px" class="rev">
+            <a href="#contact" class="btn-primary"
+              >Book a school demo session</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 45-MIN SESSION -->
+    <section class="session-section" id="session">
+      <div class="eyebrow eyebrow-dark rev">The session structure</div>
+      <h2 class="sh sh-dark rev" style="margin-bottom: 14px">
+        45-minute career strategy session
+      </h2>
+      <p class="sp sp-dark rev" style="margin-bottom: 44px">
+        A structured agenda every principal can review before booking. Every
+        minute serves a clear purpose.
+      </p>
+      <div class="session-grid rev">
+        <div class="session-step">
+          <div class="ss-num">01</div>
+          <div class="ss-time">5'</div>
+          <div class="ss-label">Icebreaker</div>
+          <div class="ss-sub">Energy and comfort setting for the group</div>
+        </div>
+        <div class="session-step">
+          <div class="ss-num">02</div>
+          <div class="ss-time">10'</div>
+          <div class="ss-label">Career awareness</div>
+          <div class="ss-sub">Options beyond the familiar and obvious</div>
+        </div>
+        <div class="session-step">
+          <div class="ss-num">03</div>
+          <div class="ss-time">8'</div>
+          <div class="ss-label">Personality activity</div>
+          <div class="ss-sub">Strengths and aptitude mapping exercise</div>
+        </div>
+        <div class="session-step">
+          <div class="ss-num">04</div>
+          <div class="ss-time">10'</div>
+          <div class="ss-label">Career mapping</div>
+          <div class="ss-sub">Subject to career pathway connections</div>
+        </div>
+        <div class="session-step">
+          <div class="ss-num">05</div>
+          <div class="ss-time">8'</div>
+          <div class="ss-label">Goal setting</div>
+          <div class="ss-sub">Concrete next three steps for each student</div>
+        </div>
+        <div class="session-step">
+          <div class="ss-num">06</div>
+          <div class="ss-time">4'</div>
+          <div class="ss-label">Q&amp;A</div>
+          <div class="ss-sub">Open questions from students and teachers</div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 44px" class="rev">
+        <a href="#contact" class="btn-primary"
+          >Book a trial session for your school</a
+        >
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section section-alt" id="media">
+      <div class="eyebrow rev">Photos &amp; media</div>
+      <h2 class="sh rev">Behind the work</h2>
+      <!-- <p class="sp rev">
+        Replace these placeholders with real photos from school workshops,
+        speaking engagements, media appearances, and events.
+      </p> -->
+      <div class="gallery-grid rev">
+        <div class="gallery-slot tall">
+          <img src="/image/mansi/mansi-workshop.jpeg" alt="Workshop session" />
+        </div>
+        <div class="gallery-slot tall">
+          <img src="/image/mansi/mansi-01 (13).jpeg" alt="Workshop session" />
+        </div>
+        <div class="gallery-slot tall">
+          <img src="/image/mansi/mansi-01 (5).jpeg" alt="Workshop session" />
+        </div>
+        <!-- <div class="gallery-slot">
+          <img src="/image/mansi/mansi-01 (13).jpeg" alt="School session" />
+        </div>
+        <div class="gallery-slot">
+          <img src="/image/mansi/mansi-01 (5).jpeg" alt="Media appearance" />
+        </div>
+        <div class="gallery-slot">
+          <img src="/image/mansi/mansi-01 (6).jpeg" alt="Parent session" />
+        </div>
+        <div class="gallery-slot">
+          <img src="/image/mansi/mansi-01 (7).jpeg" alt="Awards" />
+        </div> -->
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="eyebrow rev">What people say</div>
+      <h2 class="sh rev">Reviews from those who matter most</h2>
+      <p class="sp rev">
+        Principals, parents, students, and professionals — the voices that
+        validate a career program.
+      </p>
+      <div class="t-tabs rev">
+        <button class="t-tab on" onclick="filterT('all', this)">All</button>
+        <button class="t-tab" onclick="filterT('principal', this)">
+          Principals
+        </button>
+        <button class="t-tab" onclick="filterT('parent', this)">Parents</button>
+        <button class="t-tab" onclick="filterT('student', this)">
+          Students
+        </button>
+        <button class="t-tab" onclick="filterT('pro', this)">
+          Professionals
+        </button>
+      </div>
+      <div class="t-grid" id="tGrid">
+        <div class="t-video-card" data-type="principal">
+          <!-- <div class="t-video-slot">
+            <div
+              style="
+                position: absolute;
+                inset: 0;
+                background: #edeae5;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+              "
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#C0BAB2"
+                stroke-width="1.5"
+              >
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+              <span style="font-size: 12px; color: #c0bab2; font-weight: 500"
+                >Add principal video testimonial</span
+              >
+              <span style="font-size: 11px; color: #d4cfc7"
+                >YouTube embed or mp4 file</span
+              >
+            </div>
+          </div> -->
+          <div class="t-video-body">
+            <div class="t-video-tag">Principal</div>
+            <div class="t-video-name">Mrs. Sunita Kapoor</div>
+            <div class="t-video-role">Principal, Noida School</div>
+            <div class="t-video-quote">
+              "Mansi's workshop didn't motivate our students — it gave them a
+              repeatable framework. The change in how they communicate has been
+              measurable and lasting."
+            </div>
+          </div>
+        </div>
+        <div class="t-video-card" data-type="pro">
+          <!-- <div class="t-video-slot">
+            <div
+              style="
+                position: absolute;
+                inset: 0;
+                background: #edeae5;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+              "
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#C0BAB2"
+                stroke-width="1.5"
+              >
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+              <span style="font-size: 12px; color: #c0bab2; font-weight: 500"
+                >Add professional video testimonial</span
+              >
+              <span style="font-size: 11px; color: #d4cfc7"
+                >YouTube embed or mp4 file</span
+              >
+            </div>
+          </div> -->
+          <div class="t-video-body">
+            <div class="t-video-tag">Professional</div>
+            <div class="t-video-name">Sahil Fernandez</div>
+            <div class="t-video-role">Early-stage founder, Bengaluru</div>
+            <div class="t-video-quote">
+              "Working with Mansi reshaped how I position my brand. Within two
+              months I had inbound leads from exactly the kind of investors I
+              was trying to reach."
+            </div>
+          </div>
+        </div>
+        <div class="t-video-card" data-type="parent">
+          <!-- <div class="t-video-slot">
+            <div
+              style="
+                position: absolute;
+                inset: 0;
+                background: #edeae5;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+              "
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#C0BAB2"
+                stroke-width="1.5"
+              >
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+              <span style="font-size: 12px; color: #c0bab2; font-weight: 500"
+                >Add parent video testimonial</span
+              >
+              <span style="font-size: 11px; color: #d4cfc7"
+                >YouTube embed or mp4 file</span
+              >
+            </div>
+          </div> -->
+          <div class="t-video-body">
+            <div class="t-video-tag">Parent</div>
+            <div class="t-video-name">Rekha Mehta</div>
+            <div class="t-video-role">Parent, class 11 student, Ghaziabad</div>
+            <div class="t-video-quote">
+              "My daughter finally has a clear idea of which stream to choose.
+              The career assessment explained her strengths in a way our whole
+              family could understand."
+            </div>
+          </div>
+        </div>
+        <div class="t-text-card" data-type="principal">
+          <div class="t-quote">"</div>
+          <div class="t-body">
+            We signed up for the annual program after the trial session. The
+            personalized student reports are something parents genuinely value —
+            and it reflects well on the school's brand.
+          </div>
+          <div class="t-person">
+            <div class="t-avatar">RG</div>
+            <div>
+              <div class="t-name">Mr. Rakesh Gupta</div>
+              <div class="t-role">Principal, St. Joseph's Academy, Noida</div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="t-text-card" data-type="student">
+          <div class="t-quote">"</div>
+          <div class="t-body">
+            I always thought I had to become a doctor because of family
+            expectations. After the session I discovered UX design and I'm now
+            pursuing it with full confidence and a clear roadmap.
+          </div>
+          <div class="t-person">
+            <div class="t-avatar">AK</div>
+            <div>
+              <div class="t-name">Aisha Khan</div>
+              <div class="t-role">Student, class 12, Delhi</div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="t-text-card" data-type="student">
+          <div class="t-quote">"</div>
+          <div class="t-body">
+            The personality activity was surprisingly accurate. It showed me
+            careers I had never considered but now genuinely excite me. My
+            goal-setting is completely different now.
+          </div>
+          <div class="t-person">
+            <div class="t-avatar">RM</div>
+            <div>
+              <div class="t-name">Rohan Mishra</div>
+              <div class="t-role">Student, class 10, Ghaziabad</div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="eyebrow rev" style="justify-content: center">
+        Common questions
+      </div>
+      <h2 class="sh rev" style="text-align: center; margin-bottom: 44px">
+        Questions principals and parents ask
+      </h2>
+      <div class="faq-wrap">
+        <div class="faq-item rev">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-text"
+              >Which classes is this program designed for?</span
+            >
+            <span class="faq-ico">+</span>
+          </button>
+          <div class="faq-ans">
+            Our programs are designed for students in classes 9 to 12. Content
+            is tailored to be age-appropriate and directly relevant to upcoming
+            board exams, stream selection, and entrance decisions.
+          </div>
+        </div>
+        <div class="faq-item rev">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-text"
+              >Is this a one-day event or a yearly engagement?</span
+            >
+            <span class="faq-ico">+</span>
+          </button>
+          <div class="faq-ans">
+            Both. Schools begin with a single 45-minute trial session at no
+            commitment. From there, they can move to the annual program —
+            monthly touchpoints, career assessments, parent sessions, and 1-year
+            student support throughout the academic year.
+          </div>
+        </div>
+        <div class="faq-item rev">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-text">Do parents attend the sessions?</span>
+            <span class="faq-ico">+</span>
+          </button>
+          <div class="faq-ans">
+            Yes. Dedicated parent sessions are conducted separately so parents
+            understand the guidance their child receives and can actively
+            support them at home. Parent engagement is built into every school
+            program — it is not optional.
+          </div>
+        </div>
+        <div class="faq-item rev">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-text"
+              >How many students can attend each session?</span
+            >
+            <span class="faq-ico">+</span>
+          </button>
+          <div class="faq-ans">
+            Group workshops work best with 30 to 50 students per batch.
+            Personalized career assessment sessions are conducted in groups of
+            up to 10 students to ensure every student receives a customized
+            report and individual attention.
+          </div>
+        </div>
+        <div class="faq-item rev">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-text"
+              >Do students receive a certificate or report?</span
+            >
+            <span class="faq-ico">+</span>
+          </button>
+          <div class="faq-ans">
+            Yes. Students completing the career assessment and workshop series
+            receive a personalized career roadmap report based on their
+            personality and aptitude, along with a participation certificate
+            they can add to their academic portfolio.
+          </div>
+        </div>
+        <div class="faq-item rev">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-text"
+              >Is this the same as psychological counselling?</span
+            >
+            <span class="faq-ico">+</span>
+          </button>
+          <div class="faq-ans">
+            No. These are educational and coaching services focused on career
+            guidance, mentoring, personal development, and strategy. They are
+            not a substitute for psychological, psychiatric, or medical
+            diagnosis or treatment. Students requiring mental health support
+            should consult a qualified mental health professional.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <div class="contact-wrap" id="contact">
+      <div class="contact-left">
+        <div class="eyebrow eyebrow-dark rev">Get in touch</div>
+        <h2 class="rev">Ready to build presence on purpose?</h2>
+        <p class="rev">
+          Whether you are a principal bringing career clarity to your school, or
+          a professional ready to own your next chapter — start with a direct
+          conversation.
+        </p>
+        <div class="rev">
+          <div class="c-detail">
+            <div class="c-icon" style="color: white">✉</div>
+            <div class="c-text">info@mansimindsetmentor.com</div>
+          </div>
+          <div class="c-detail">
+            <div class="c-icon" style="color: white">☎</div>
+            <div class="c-text">+91 92178 14001</div>
+          </div>
+          <div class="c-detail">
+            <div class="c-icon" style="color: white">💬</div>
+            <div class="c-text">WhatsApp: +91 95604 29700</div>
+          </div>
+          <div class="c-detail">
+            <div class="c-icon" style="color: white">📍</div>
+            <div class="c-text">Noida, India</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right rev">
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full name</label>
+              <input type="text" name="name" placeholder="Your name" required />
+            </div>
+
+            <div class="form-group">
+              <label>Phone number</label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="+91 98765 43210"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Email address</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="you@email.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label>I am reaching out as a</label>
+            <select name="role" required>
+              <option value="">Select your role</option>
+              <option>School principal / admin</option>
+              <option>Parent of a student</option>
+              <option>Student (class 9–12)</option>
+              <option>Founder / entrepreneur</option>
+              <option>Working professional</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>What would you like to discuss?</label>
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Describe briefly..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" id="submitBtn" class="form-submit">
+            Send message
+          </button>
+
+          <div class="disc-note">
+            <strong>Notice:</strong> Our services are educational and coaching
+            only...
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img
+            href="/img/white-logo-removebg-preview (2).png"
+            alt="Mansi Sharma"
+            style="width: 200px; height: auto"
+          />
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#schools">For schools</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a
+            href="https://www.linkedin.com/in/mansi-sharma-msdevelopers?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+            class="f-social"
+            target="_blank"
+            rel="noopener"
+            title="LinkedIn"
+            >in</a
+          >
+          <a
+            href="https://www.instagram.com/mansisharma.official?igsh=ZHVxNnZzc2EwOHpp&utm_source=qr"
+            class="f-social"
+            target="_blank"
+            rel="noopener"
+            title="Instagram"
+            >ig</a
+          >
+          <a
+            href="https://api.whatsapp.com/send/?phone=%2B919560429700&text&type=phone_number&app_absent=0"
+            class="f-social"
+            target="_blank"
+            rel="noopener"
+            title="WhatsApp"
+            >wa</a
+          >
+          <a
+            href="https://www.facebook.com/photo/?fbid=122112456368842835&set=a.122094204950842835"
+            class="f-social"
+            target="_blank"
+            rel="noopener"
+            title="Facebook"
+            >fb</a
+          >
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Mansi Sharma. All rights reserved.</div>
+        <div class="footer-disc">
+          Our services focus on career guidance, mentoring, personal
+          development, and strategy. They are educational and coaching services
+          only and are not a substitute for psychological, psychiatric, or
+          medical diagnosis or treatment. |
+          <a
+            href="mailto:info@mansimindsetmentor.com"
+            style="color: rgba(255, 255, 255, 0.25)"
+            >info@mansimindsetmentor.com</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("in");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".rev").forEach((el) => io.observe(el));
+
+      function toggleFaq(btn) {
+        const item = btn.closest(".faq-item");
+        const isOpen = item.classList.contains("open");
+        document
+          .querySelectorAll(".faq-item.open")
+          .forEach((i) => i.classList.remove("open"));
+        if (!isOpen) item.classList.add("open");
+      }
+
+      function filterT(type, btn) {
+        document
+          .querySelectorAll(".t-tab")
+          .forEach((b) => b.classList.remove("on"));
+        btn.classList.add("on");
+        document.querySelectorAll("#tGrid > [data-type]").forEach((card) => {
+          card.style.display =
+            type === "all" || card.dataset.type === type ? "" : "none";
+        });
+      }
+
+      function handleSubmit(btn) {
+        const orig = btn.textContent;
+        btn.textContent = "Message sent ✓";
+        btn.style.background = "#2d6a4f";
+        btn.disabled = true;
+        setTimeout(() => {
+          btn.textContent = orig;
+          btn.style.background = "";
+          btn.disabled = false;
+        }, 3000);
+      }
+
+      ["heroImg", "aboutImg", "workshopImg"].forEach((id) => {
+        const img = document.getElementById(id);
+        if (!img) return;
+        img.onload = function () {
+          this.style.display = "block";
+          const ph = document.getElementById(id + "ph");
+          if (ph) ph.style.display = "none";
+        };
+        if (img.complete && img.naturalWidth) img.onload();
+      });
+    </script>
+    <script>
+      const form = document.getElementById("contactForm");
+      const btn = document.getElementById("submitBtn");
+
+      // Replace with your Google Apps Script Web App URL
+      const SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbwqsERFlR3dxRyanO11cuOXngYYDl0hfoDQtAhrpRQ5aOTTNno-FY7DYY9yqsbMicWl/exec";
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        // Show loading state
+        const originalText = btn.innerText;
+        btn.innerText = "Please wait...";
+        btn.disabled = true;
+
+        const formData = {
+          name: form.name.value,
+          phone: form.phone.value,
+          email: form.email.value,
+          role: form.role.value,
+          message: form.message.value,
+          date: new Date().toISOString(),
+        };
+
+        try {
+          const response = await fetch(SCRIPT_URL, {
+            method: "POST",
+            mode: "no-cors", // required for Apps Script simple endpoint
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          });
+
+          // success UI
+          alert("Message sent successfully!");
+          form.reset();
+        } catch (error) {
+          console.error(error);
+          alert("Something went wrong. Please try again.");
+        }
+
+        // Restore button
+        btn.innerText = originalText;
+        btn.disabled = false;
+      });
+    </script>
+  </body>
+</html>

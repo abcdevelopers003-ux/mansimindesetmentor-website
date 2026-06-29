@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media & Presence | MindsetMentor</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="icon" type="image/png" href="img/favicon.jpeg">
+
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Arial, sans-serif;
+  background:#0d0d0d;
+  color:#fff;
+}
+h1,h2,h3{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:400;
+  line-height:1.25;
+}
+p{font-size:16px;line-height:1.55;font-weight:600}
+section{padding:110px 8%}
+.gold{color:#d1ad43}
+.label{
+  color:#d1ad43;
+  font-size:13px;
+  margin-bottom:45px;
+}
+.btn{
+  display:inline-block;
+  padding:18px 48px;
+  background:#d1ad43;
+  color:#000;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:600;
+  transition:.4s;
+}
+.btn:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(209,173,67,.25)}
+
+/* HERO */
+.hero{
+  min-height:85vh;
+  background:
+    linear-gradient(rgba(8,8,8,.72),rgba(8,8,8,.72)),
+    url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1800&q=80");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+}
+.hero-content{
+  max-width:1200px;
+  margin:auto;
+  width:100%;
+}
+.hero h1{
+  font-size:clamp(42px,5vw,76px);
+  margin-bottom:90px;
+}
+.hero p{
+  max-width:1000px;
+  margin-bottom:55px;
+}
+
+/* GALLERY */
+.gallery-section{
+  background:#f1eee9;
+  color:#000;
+  text-align:center;
+}
+.gallery-section .small-title{
+  color:#555;
+  font-size:13px;
+  margin-bottom:40px;
+}
+.gallery-section h2{
+  font-size:clamp(34px,4vw,58px);
+  margin-bottom:70px;
+}
+.gallery{
+  max-width:1150px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.gallery img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  display:block;
+}
+
+/* FEATURE */
+.feature{
+  background:#dedbd7;
+  color:#000;
+}
+.feature-wrap{
+  max-width:1300px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  align-items:center;
+}
+.feature img{
+  width:100%;
+  height:720px;
+  object-fit:cover;
+  border-radius:8px;
+}
+.feature-text .label{
+  color:#555;
+}
+.feature h2{
+  font-size:clamp(36px,4vw,62px);
+  margin-bottom:60px;
+}
+.feature p{
+  max-width:650px;
+  margin-bottom:80px;
+}
+
+/* CTA */
+.cta{
+  background:#101010;
+  text-align:center;
+  padding:120px 8%;
+}
+.cta-lines{
+  max-width:1150px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:65px;
+}
+.cta-line{
+  width:180px;
+  height:4px;
+  background:#d1ad43;
+}
+.cta h2{
+  font-size:clamp(36px,4vw,60px);
+}
+.cta p{
+  max-width:800px;
+  margin:0 auto 55px;
+}
+.cta .btn{
+  background:#e7e3df;
+}
+
+/* MOBILE */
+@media(max-width:992px){
+  section{padding:90px 6%}
+  .gallery{grid-template-columns:1fr 1fr}
+  .feature-wrap{grid-template-columns:1fr}
+  .feature img{height:520px}
+}
+@media(max-width:600px){
+  section{padding:75px 5%}
+  .hero{min-height:80vh}
+  .hero h1{font-size:38px;margin-bottom:55px}
+  .hero p{font-size:14px}
+  .btn{width:100%;text-align:center}
+  .gallery{grid-template-columns:1fr}
+  .gallery img{height:300px}
+  .feature img{height:420px}
+  .feature p{margin-bottom:45px}
+  .cta-lines{gap:20px}
+  .cta-line{width:90px}
+}
+</style>
+</head>
+
+<body>
+     <div id="header">
+  <header>
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            <img src="img/white-logo.jpeg" alt="Mansi Sharma Logo" class="logo-img">
+        </a>
+
+        <div class="menu" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <nav id="nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="content.html">Content Strategy</a>
+            <a href="mentorship.html">Mentorship</a>
+            <a href="media.html">Media & Presence</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+   </div> 
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="label">/ Mindset • Leadership • Transformation</div>
+
+    <h1>Transform Your Mindset. Transform Your Life.</h1>
+
+    <p>
+      Empowering students, professionals, entrepreneurs, and leaders to unlock
+      their true potential through mindset coaching, personal development,
+      confidence building, and leadership transformation.
+    </p>
+
+    <a href="contact.html" class="btn">Start Your Growth Journey</a>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="small-title">
+    Workshops • Coaching • Leadership Sessions
+  </div>
+
+  <h2>Creating lasting impact through learning and transformation.</h2>
+
+  <div class="gallery">
+    <img src="img\mansi-1.jpeg" alt="Leadership Workshop">
+    <img src="img\mam-6.jfif" alt="Motivational Session">
+    <img src="img\mam,baithe.jfif" alt="Corporate Training">
+    <img src="img\legal-,mam.jfif" alt="Mindset Coaching">
+    <img src="img/personal-development.png" alt="Personal Development">
+    <img src="img\mam-2.jfif" alt="Youth Empowerment Program">
+  </div>
+</section>
+
+<!-- FEATURE -->
+<section class="feature">
+  <div class="feature-wrap">
+    <img src="img/ChatGPT Image Jun 8, 2026, 12_28_16 PM.png" alt="Mansi Sharma Speaking">
+
+    <div class="feature-text">
+      <div class="label">— Speaker • Mentor • Coach</div>
+
+      <h2>Helping people build confidence, clarity, and purpose.</h2>
+
+      <p>
+        At MindsetMentor, we believe that success begins with the right mindset.
+        Through powerful workshops, coaching programs, and keynote sessions,
+        individuals learn how to overcome self-doubt, communicate effectively,
+        and achieve meaningful personal and professional growth.
+      </p>
+
+      <p>
+        Every session is designed to inspire action, strengthen confidence,
+        improve leadership skills, and create sustainable positive change.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE 2 -->
+<section class="feature reverse">
+  <div class="feature-wrap">
+
+    <div class="feature-text">
+      <div class="label">— Why MindsetMentor?</div>
+
+      <h2>Real growth. Practical strategies. Lasting results.</h2>
+
+      <p>
+        Our programs focus on self-awareness, emotional intelligence,
+        communication skills, goal setting, and leadership development.
+        Participants leave with actionable tools that can be applied
+        immediately in their personal and professional lives.
+      </p>
+
+      <p>
+        Whether you're a student preparing for the future, a professional
+        seeking career growth, or a leader looking to inspire others,
+        MindsetMentor helps you move forward with confidence.
+      </p>
+    </div>
+
+    <img src="img/mindset-2.png" alt="Coaching Session">
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="cta-lines">
+    <div class="cta-line"></div>
+    <h2>Ready to Unlock Your Potential?</h2>
+    <div class="cta-line"></div>
+  </div>
+
+  <p>
+    Join our workshops, coaching programs, and transformational sessions to
+    build confidence, strengthen leadership skills, and create the future
+    you truly deserve.
+  </p>
+
+  <a href="contact.html" class="btn">Book a Consultation</a>
+</section>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+
+  
+<div id="footer">
+  <footer id="contact">
+  <div class="footer-container">
+
+    <div class="footer-line"></div>
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <h2>MANSI SHARMA</h2>
+
+        <p>
+          Built with vision, discipline and purpose.
+        </p>
+
+        <div class="social-icons">
+
+          <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="http://wa.me/+919560429700" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          
+             <!-- Facebook -->
+    <a href="https://www.facebook.com/photo/?fbid=122112456368842835&set=a.122094204950842835&__tn__=%3C" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+        </div>
+      </div>
+
+      <div class="contact-info">
+
+        <h4>DIRECT LINE</h4>
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+        mansisharma197@gmail.com
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          +91 9560429700
+        </p>
+
+      </div>
+    </div>
+
+    <div class="bottom-footer">
+
+      <span>
+        © 2026 Mansi Sharma
+      </span>
+
+      <div class="footer-links">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+</div>
+
+<script src="js/include.js"></script>
+<script src="js/index.js"></script>
+
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<div id="footer"></div>
+<script>
+fetch("header.html")
+.then(res => res.text())
+.then(data => {
+  document.getElementById("header").innerHTML = data;
+});
+
+fetch("footer.html")
+.then(res => res.text())
+.then(data => {
+  document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+
+</body>
+</html>
